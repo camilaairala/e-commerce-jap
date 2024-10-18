@@ -27,13 +27,14 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar navbar-dark bg-dark"> //Icono de navbar lista
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-          <div class="bg-dark p-4">
-          </div>
+      </button>
+      
+      <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="bg-dark p-4">
           <ul class="navbar-nav w-100 justify-content-between">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Inicio</a>
@@ -49,23 +50,21 @@
             </li>
           </ul>
         </div>
-      </button>
-      
+      </div>
+
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Buscar</button>
       </form>
 
-  
       <div class="form-check form-switch mb-3">
         <input class="form-check-input" type="checkbox" id="darkModeSwitch">
-        <label class="form-check-label" for="darkModeSwitch">Modo noche</label>
       </div>
 
       <div class="navbar-nav ms-auto">
         <div class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fas fa-user"></i> <span id="nusuario">Usuario</span>
+                <i class="fas fa-user"></i> <span id="nuser">Usuario</span>
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#"><i class="fas fa-shopping-cart"></i> Mi carrito</a></li>
@@ -74,41 +73,43 @@
                 <li><a class="dropdown-item" href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a></li>
             </ul>
         </div>
+      </div>
     </div>
-  </nav>
+</nav>
+
   <main>
     <div class="container">
         <h2 class="alert-heading">Ajustes de perfil de usuario</h2>
       <p>Actualiza los datos de tu cuenta y perfil para mantenerlos al día</p>
       <div>
-      <form>
+      <form id="profileInfo">
         <div>
           <div>
           <h4>Información de perfil</h4>
           <div class="row">
             <div class="col-md-6">
             <label for="name">Nombre*</label>
-            <input type="text" class="form-control" required>
+            <input type="text" id="name" class="form-control" required>
           </div>
           <div class="col-md-6">
             <label for="scnd-name">Segundo nombre</label>
-            <input type="text" class="form-control">
+            <input type="text" id="middleName" class="form-control">
           </div>
           <div class="col-md-6">
             <label for="surname">Apellido*</label>
-            <input type="text" class="form-control" required>
+            <input type="text" id="surname" class="form-control" required>
           </div>
           <div class="col-md-6">
             <label for="scnd-surname">Segundo apellido</label>
-            <input type="text" class="form-control">
+            <input type="text" id="secondSurname" class="form-control">
           </div>
             <div class="col-md-6">
               <label for="email">Email*</label>
-              <input type="text" class="form-control" required>
+              <input type="text" id="username" class="form-control" required>
             </div>
             <div class="col-md-6">
               <label for="contact-number">Teléfono de contacto</label>
-              <input type="text" class="form-control">
+              <input type="text" id="contactNumber" class="form-control">
             </div>  
           </div>
         </div>
@@ -141,7 +142,6 @@
     </div>
   </footer>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/login.js"></script>
   <script src="js/init.js"></script>
   <script src="js/my-profile.js"></script>
 </body>

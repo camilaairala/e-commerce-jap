@@ -546,6 +546,7 @@ footer p {
   display: flex;
   justify-content: space-between;
 }
+
 /*#profile-pic {
   border-color: #220344;
   width: 150px;
@@ -555,11 +556,13 @@ footer p {
 }*/
 
 .container {
-  padding: 10%;
+ padding-top: 1rem;
 }
+
 .container h2, h4 {
 color: white;
 }
+
 .container p {
   color:gray;
 }
@@ -569,6 +572,7 @@ color: white;
   font-size: 1.2em;
   display: block;
   margin-bottom: 0.2rem;
+
 }
 .form-label {
   color: #ffcc31;
@@ -597,6 +601,7 @@ background-color: #ffcc31;
   cursor: pointer;
   margin-top: 0.30rem;
 }
+
 .btn-primary:hover {
   background-color: #e21934;
 }
